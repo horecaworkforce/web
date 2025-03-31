@@ -37,7 +37,7 @@ export function Header() {
 					<Link href="/" className="flex items-center">
 						<div className="logo-container h-14 w-14 md:h-16 md:w-16 shadow-sm border border-gray-100">
 							<Image
-								src="/images/logo.png"
+								src="/logo.png"
 								alt="HoReCa Workforce Logo"
 								width={64}
 								height={64}
@@ -93,6 +93,7 @@ export function Header() {
 					</div>
 
 					<button
+						type="button"
 						className="md:hidden text-gray-800"
 						onClick={() => setMobileMenuOpen(true)}
 					>
@@ -120,7 +121,7 @@ export function Header() {
 								>
 									<div className="logo-container h-12 w-12 shadow-sm border border-gray-100">
 										<Image
-											src="/images/logo.png"
+											src="/logo.png"
 											alt="HoReCa Workforce Logo"
 											width={48}
 											height={48}
@@ -132,6 +133,7 @@ export function Header() {
 									</span>
 								</Link>
 								<button
+									type="button"
 									className="text-gray-800"
 									onClick={() => setMobileMenuOpen(false)}
 								>

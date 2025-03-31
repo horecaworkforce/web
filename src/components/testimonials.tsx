@@ -82,7 +82,7 @@ export function Testimonials() {
 								transition={{ duration: 0.5 }}
 								className="text-xl md:text-2xl italic text-gray-700 mb-8"
 							>
-								"{testimonials[currentIndex].quote}"
+								{`"${testimonials[currentIndex].quote}"`}
 							</motion.blockquote>
 
 							<div className="mt-4">

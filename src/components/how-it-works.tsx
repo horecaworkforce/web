@@ -53,7 +53,7 @@ export function HowItWorks() {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					{steps.map((step, index) => (
 						<motion.div
-							key={index}
+							key={step.title}
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -80,6 +80,7 @@ export function HowItWorks() {
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
 									>
+										<title>Steps</title>
 										<path
 											d="M9 5L16 12L9 19"
 											stroke="currentColor"

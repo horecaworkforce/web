@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "sonner";
 
 export function ContactForm() {
 	const [formData, setFormData] = useState({
@@ -38,8 +38,7 @@ export function ContactForm() {
 		// Simulate form submission
 		await new Promise((resolve) => setTimeout(resolve, 1500));
 
-		toast({
-			title: "Form submitted successfully!",
+		toast("Form submitted successfully!", {
 			description: "We'll get back to you as soon as possible.",
 		});
 
