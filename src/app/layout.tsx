@@ -1,10 +1,12 @@
 import type React from "react";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { Toaster } from "@/components/ui/toast";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +28,8 @@ export default function RootLayout({
 				{children}
 				<Footer />
 				<Toaster />
+				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
