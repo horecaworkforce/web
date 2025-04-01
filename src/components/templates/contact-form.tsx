@@ -55,10 +55,9 @@ export const ContactFormEmailTemplate: React.FC<Readonly<ContactForm>> = ({
 		</div>
 
 		<div className="mt-6 pt-4 border-t text-gray-500 text-sm">
-			<p>This is an automated message from your website's contact form.</p>
+			<p>{"This is an automated message from your website's contact form."}</p>
 			<p className="mt-1">
-				To reply to this inquiry, simply respond directly to this email or
-				contact the customer at {email}.
+				{`To reply to this inquiry, simply respond directly to this email or contact the customer at ${email}.`}
 			</p>
 		</div>
 	</div>
