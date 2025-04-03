@@ -75,8 +75,8 @@ export default function About() {
 						</div>
 						<h3 className="text-xl font-bold mb-3 text-gray-900">Cafés</h3>
 						<p className="text-gray-600">
-							Source talented pastry chefs and baristas who can create signature
-							items that keep customers coming back.
+							Source talented pastry chefs who can create signature items that
+							keep customers coming back.
 						</p>
 					</motion.div>
 				</div>
