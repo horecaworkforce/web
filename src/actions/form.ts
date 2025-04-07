@@ -11,7 +11,7 @@ export async function submitContactInfo(payload: ContactForm) {
 	const { firstName, lastName, subject, email, message } = payload;
 
 	const { error } = await resend.emails.send({
-		from: "HoReCa <contact@horecaworkforce.au>",
+		from: "HoReCa <contact@horecaworkforce.com>",
 		to: [EMAIL],
 		subject,
 		// @ts-expect-error: I don't know why this is throwing an error, because the documentation says it should work
